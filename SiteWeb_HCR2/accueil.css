@@ -1,0 +1,143 @@
+/* Header */
+header{
+    position: absolute;
+    width: 201.469vh;
+    height: 15.7398vh;
+    left: 0vh;
+    top: 0vh;
+
+    background-image: linear-gradient(to top, #353637, #454648);
+}
+
+/* hcr2_Logo */
+#HCR2_Logo{
+    position: absolute;
+    width: 26.7576vh;
+    height: 14.1658vh;
+    left: 2.4134vh;
+    top: 1vh;
+}
+
+/* flexContainerButtonHeader */
+#flexContainerButtonHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Boutton Header */
+.Button_Header{
+    width: 20.9864vh;
+    height: 15.7398vh;
+    top: 0vh;
+    color: white;
+    font-size: 5.0367vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(to top, #363638, #030104);
+}
+
+/* Boutton Header (HOVER) */
+.Button_Header:hover{
+    background-image: linear-gradient(to top, #ABACB0, #58595B);
+}
+
+/* Boutton Contact */
+#Button_Contact{
+    border-top: none;
+    border-bottom: none;
+    border-left: rgb(0,0,0);
+    border-right: rgb(0,0,0);
+    border-width: 0.5247vh;
+    border-left-style: solid;
+    border-right-style: solid;
+
+    align-content: start;
+}
+
+/* Boutton Contact */
+#Button_Calculer{
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: rgb(0,0,0);
+
+    border-width: 0.5247vh;
+    border-right-style: solid;
+}
+
+/* Formulaire_Image */
+#icon_contact{
+    width: 10.0189vh;
+    height: 10.702vh;
+    filter: invert();
+
+    transform: rotate(5.35deg);
+}
+
+
+/* Button_Calcule */
+
+position: absolute;
+width: 205px;
+height: 172px;
+left: 962px;
+top: 0px;
+
+
+
+/* ButtonBorder */
+
+position: absolute;
+width: 205px;
+height: 150px;
+left: 962px;
+top: 22px;
+
+background: #000000;
+
+
+/* Button1 */
+
+position: absolute;
+width: 200px;
+height: 150px;
+left: 962px;
+top: 22px;
+
+background: linear-gradient(180deg, #363638 0%, #030104 100%);
+
+
+/* CALCULE */
+
+position: absolute;
+width: 176px;
+height: 44px;
+left: 977px;
+top: 121px;
+
+font-family: 'Luckiest Guy';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+
+/* Calculator_Image */
+
+position: absolute;
+width: 104px;
+height: 104px;
+left: 992px;
+top: 0px;
+
+background: url(istockphoto-1476080120-612x612-removebg-preview.png);
+transform: rotate(-23.69deg);
