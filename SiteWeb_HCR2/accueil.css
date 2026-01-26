@@ -1,12 +1,23 @@
 /* Header */
 header{
-    position: absolute;
     width: 201.469vh;
     height: 15.7398vh;
     left: 0vh;
     top: 0vh;
 
-    background-image: linear-gradient(to top, #353637, #454648);
+    background: linear-gradient(to top, #353637, #454648);
+}
+
+/* Paragraphe */
+p{
+    font-size: 3.7775vh;
+}
+/* Body */
+body{
+    width: 185.7292vh;
+    height: 100vh;
+    background: linear-gradient(to top, #353637, #66656B);
+    margin: 0vh;
 }
 
 /* hcr2_Logo */
@@ -19,7 +30,7 @@ header{
 }
 
 /* flexContainerButtonHeader */
-#flexContainerButtonHeader{
+#flexContainerHeader{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,11 +51,6 @@ header{
     justify-content: center;
 
     background-image: linear-gradient(to top, #363638, #030104);
-}
-
-/* Boutton Header (HOVER) */
-.Button_Header:hover{
-    background-image: linear-gradient(to top, #ABACB0, #58595B);
 }
 
 /* Boutton Contact */
@@ -80,64 +86,22 @@ header{
     transform: rotate(5.35deg);
 }
 
+#icon_calculer{
+    width: 10.9129vh;
+    height: 10.9129vh;
+    filter: invert();
 
-/* Button_Calcule */
+    transform: rotate(-23.69deg);
+}
 
-position: absolute;
-width: 205px;
-height: 172px;
-left: 962px;
-top: 0px;
+/* Boutton Header (HOVER) */
+.Button_Header:hover{
+    background-image: linear-gradient(to top, #ABACB0, #58595B);
+}
 
-
-
-/* ButtonBorder */
-
-position: absolute;
-width: 205px;
-height: 150px;
-left: 962px;
-top: 22px;
-
-background: #000000;
-
-
-/* Button1 */
-
-position: absolute;
-width: 200px;
-height: 150px;
-left: 962px;
-top: 22px;
-
-background: linear-gradient(180deg, #363638 0%, #030104 100%);
-
-
-/* CALCULE */
-
-position: absolute;
-width: 176px;
-height: 44px;
-left: 977px;
-top: 121px;
-
-font-family: 'Luckiest Guy';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 48px;
-
-color: #FFFFFF;
-
-
-
-/* Calculator_Image */
-
-position: absolute;
-width: 104px;
-height: 104px;
-left: 992px;
-top: 0px;
-
-background: url(istockphoto-1476080120-612x612-removebg-preview.png);
-transform: rotate(-23.69deg);
+#TextExplicatif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
