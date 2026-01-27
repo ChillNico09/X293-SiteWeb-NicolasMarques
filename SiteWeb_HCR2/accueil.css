@@ -15,6 +15,7 @@ h1{
 
 /* Paragraphe */
 p{
+    text-align: center;
     margin: 1vh;
     font-size: 3.7775vh;
 }
@@ -93,6 +94,7 @@ body{
     transform: rotate(5.35deg);
 }
 
+/* Calculatrice_Image */
 #icon_calculer{
     width: 10.9129vh;
     height: 10.9129vh;
@@ -107,8 +109,8 @@ body{
 }
 
 #TextExplicatif{
+    width: 201.469vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
