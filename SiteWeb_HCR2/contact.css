@@ -16,6 +16,7 @@ header{
 
 /* Titre 1 */
 h1{
+    z-index: +1;
     font-size: 5.0367vh;
     position:absolute;
     margin: 0;
@@ -136,7 +137,6 @@ a{
 .ContactContainer{
     display: flex;
     position: relative;
-    z-index: -1;
     flex-direction: column;
     align-items: center;
     width: 193.1447vh;
@@ -178,6 +178,21 @@ a{
     right: 5.4407vh;
 
     background: linear-gradient(180deg, #75BD4E 0%, #4AA738 100%);
+    border: 10px solid #000000;
+
+    font-size: 5vh;
+    color: white;
+}
+
+/* Boutton envoyer(HOVER)*/
+.submitInput:hover{
+    background: linear-gradient(180deg, #4AA738 0%, #75BD4E 100%);
+    border: 10px solid #000000;
+}
+
+/* Boutton envoyer(ACTIVE)*/
+.submitInput:active{
+    background: linear-gradient(180deg, #75bd4ed3 0%, #4aa738d0 100%);
     border: 10px solid #000000;
 }
 
