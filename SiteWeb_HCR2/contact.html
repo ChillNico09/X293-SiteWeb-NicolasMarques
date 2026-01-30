@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +27,26 @@
     <section class="flexContainerContact">
         <h1>Contactez-moi</h1>
         <div class="ContactContainer">
+            <!-- Zone de nom -->
             <p class="textAreaTitle">Nom</p>
-            <textarea placeholder="Entrez votre nom"></textarea>
+            <input type="text" class="textInput">
+
+            <!-- Zone de prenom -->
+            <p class="textAreaTitle">Prénom</p>
+            <input type="text" class="textInput">
+
+
+            <!-- Zone de email -->
+            <p class="textAreaTitle">Email</p>
+            <input type="text" class="textInput">
+
+
+            <!-- Zone de message -->
+            <p class="textAreaTitle">Message</p>
+            <input type="text" id="lastTextInput">
+            
+            <!-- Boutton envoyer -->
+            <input type="submit" class="submitInput">
         </div>
     </section>
 </body>
