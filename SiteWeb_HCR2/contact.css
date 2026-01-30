@@ -17,6 +17,10 @@ header{
 /* Titre 1 */
 h1{
     font-size: 5.0367vh;
+    position:absolute;
+    margin: 0;
+    top: 16.7398vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Paragraphe */
@@ -73,7 +77,7 @@ a{
 }
 
 /* Boutton Contact */
-#Button_Contact{
+#Button_Accueil{
     border-top: none;
     border-bottom: none;
     border-left: rgb(0,0,0);
@@ -96,13 +100,11 @@ a{
     border-right-style: solid;
 }
 
-/* Formulaire_Image */
+/* Accueil_Image */
 #icon_contact{
     width: 10.0189vh;
     height: 10.702vh;
     filter: invert();
-
-    transform: rotate(5.35deg);
 }
 
 /* Calculatrice_Image */
@@ -114,16 +116,57 @@ a{
     transform: rotate(-23.69deg);
 }
 
-/* Excplication du site */
-#TextExplicatif{
-    width: 208.9227vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* Boutton Header (HOVER) */
 .Button_Header:hover{
     cursor: pointer;
     background-image: linear-gradient(to top, #ABACB0, #58595B);
+}
+
+/* flexContainerContact */
+.flexContainerContact{
+    display: flex;
+    width: 208.9227vh;
+    height: 84.2602vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ContactContainer */
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 193.1447vh;
+    height: 74.4669vh;
+    background: linear-gradient(180deg, #2E3643 0%, #262C38 100%);
+    border: 10px solid #8B8B8B;
+}
+
+/* Premier titre d'une zone de texte */
+.textAreaTitle:first-of-type{
+    align-self: baseline;
+    margin-top: 2.7203vh;
+    margin-left: 5.6583vh;
+    font-weight: bold;
+}
+.textAreaTitle{
+    align-self: baseline;
+    margin-left: 5.6583vh;
+    font-weight: bold;
+}
+
+/* zone de texte */
+textarea{
+    width: 180.5223vh;
+    height: 8.2699vh;
+    
+    background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);
+    border: 5px solid #000000;
+    resize: none;
+}
+
+/* texte temporaire des zones de texte */
+textarea::placeholder{
+    color: black;
 }
