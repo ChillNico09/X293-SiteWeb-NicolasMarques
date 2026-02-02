@@ -142,7 +142,7 @@ a{
     width: 193.1447vh;
     height: 74.4669vh;
     background: linear-gradient(180deg, #2E3643 0%, #262C38 100%);
-    border: 10px solid #8B8B8B;
+    border: 1.0881vh solid #8B8B8B;
 }
 
 /* Premier titre d'une zone de saisie */
@@ -166,19 +166,19 @@ a{
     height: 5.2699vh;
     
     background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);
-    border: 5px solid #000000;
+    border: 0.5441vh solid #000000;
 }
 
 /* Boutton envoyer*/
 .submitInput{
     position: absolute;
-    width: 203px;
-    height: 131px;
+    width: 22.0892vh;
+    height: 14.2546vh;
     bottom: 1.741vh;
     right: 5.4407vh;
 
     background: linear-gradient(180deg, #75BD4E 0%, #4AA738 100%);
-    border: 10px solid #000000;
+    border: 1.0881vh solid #000000;
 
     font-size: 5vh;
     color: white;
@@ -187,13 +187,13 @@ a{
 /* Boutton envoyer(HOVER)*/
 .submitInput:hover{
     background: linear-gradient(180deg, #4AA738 0%, #75BD4E 100%);
-    border: 10px solid #000000;
+    border: 1.0881vh solid #000000;
 }
 
 /* Boutton envoyer(ACTIVE)*/
 .submitInput:active{
     background: linear-gradient(180deg, #75bd4ed3 0%, #4aa738d0 100%);
-    border: 10px solid #000000;
+    border: 1.0881vh solid #000000;
 }
 
 /* Dernière zone de saisie*/
@@ -202,5 +202,5 @@ a{
     height: 25.2699vh;
     align-self: baseline;
     background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);
-    border: 5px solid #000000;
+    border: 0.5441px solid #000000;
 }
