@@ -171,9 +171,10 @@ a{
     font-size: 3.9173vh;
     width: 22.9597vh;
     height: 7.617vh;
-    background: #4AA834;
+    background: linear-gradient(180deg, #4AB235 0%, #54B13C 100%);
     border: 1.0881vh solid #000000;
     margin-top: 21.2187vh;
+    cursor:pointer
 }
 
 .downgrade_button{
@@ -184,6 +185,7 @@ a{
     border: 1.0881vh solid #000000;
     background: linear-gradient(to top, #5D6363,#525D61);
     margin-top: 1vh;
+    cursor:pointer
 }
 
 /* Image_garage */
@@ -198,4 +200,39 @@ a{
     width: 55vh;
     z-index: +1;
     margin-top: 40vh;
+}
+
+/* Illustration de véhicule */
+#change_vehicule_button{
+    width:10vh;
+    position: absolute;
+    right: 20vh;
+}
+
+/* Boutton calculer */
+#calculerRestant{
+    position: absolute;
+    width: 22.0892vh;
+    height: 14.2546vh;
+    bottom: 1.741vh;
+    right: 5.4407vh;
+
+    background: linear-gradient(180deg, #75BD4E 0%, #4AA738 100%);
+    border: 1.0881vh solid #000000;
+
+    font-size: 5vh;
+    color: white;
+    cursor:pointer
+}
+
+/* Boutton calculer(HOVER)*/
+#calculerRestant:hover{
+    background: linear-gradient(180deg, #4AA738 0%, #75BD4E 100%);
+    border: 1.0881vh solid #000000;
+}
+
+/* Boutton calculer(ACTIVE)*/
+#calculerRestant:active{
+    background: linear-gradient(180deg, #75bd4e 0%, #4aa738 100%);
+    border: 1.0881vh solid #000000;
 }

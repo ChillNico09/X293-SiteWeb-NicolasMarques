@@ -27,42 +27,45 @@
     </header>
 <body>
     <section id="SectionCalculer">
+        <!-- Image du background -->
         <img src="assets\Background-AND-Button\GarageBackground.png" alt="Garage avec un grue en arrière plan" id="image_garage">
         <img src="assets\Vehicule_Icon\HillClimber.webp" alt="jeep rouge" id="Vehicule_Icon">
-
         <section id="upgrades_panel">
             <!-- Upgardes numero 1 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">Moteur</p>
                 <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="100'000">
-                <input type="submit" class="downgrade_button" value="100'000">
+                <input type="submit" class="upgrade_button" value="+Niveau">
+                <input type="submit" class="downgrade_button" value="-Niveau">
             </div>
             
             <!-- Upgardes numero 2 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">Adhérence</p>
                 <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="100'000">
-                <input type="submit" class="downgrade_button" value="100'000">
+                <input type="submit" class="upgrade_button" value="+Niveau">
+                <input type="submit" class="downgrade_button" value="-Niveau">
             </div>
 
             <!-- Upgardes numero 3 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">Suspension</p>
                 <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="100'000">
-                <input type="submit" class="downgrade_button" value="100'000">
+                <input type="submit" class="upgrade_button" value="+Niveau">
+                <input type="submit" class="downgrade_button" value="-Niveau">
             </div>
 
             <!-- Upgardes numero 4 -->
             <div class="upgrade_block">
-                <p class="upgrade_title">AWD</p>
+                <p class="upgrade_title">4X4</p>
                 <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="100'000">
-                <input type="submit" class="downgrade_button" value="100'000">
+                <input type="submit" class="upgrade_button" value="+Niveau">
+                <input type="submit" class="downgrade_button" value="-Niveau">
             </div>
+            <!-- Image pour changer de véhicule -->
+            <img src="assets\Background-AND-Button\ChangeVehicule_PLACEHOLDER.png" alt="Illustration d'une jeep comme bouton pour changer de véhicule" id="change_vehicule_button">
         </section>
+        <input type="submit" id="calculerRestant" value="Calculer">
     </section>
 </body>
 </html>
