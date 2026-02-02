@@ -123,6 +123,69 @@ a{
     background-image: linear-gradient(to top, #ABACB0, #58595B);
 }
 
+/* Section d'amelioration */
+#upgrades_panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 15.4407vh;
+    height: 28.8357vh;
+    width: 208.9227vh;
+    font-size: 3.9173vh
+}
+
+/* block d'amelioration*/
+.upgrade_block{
+    display: flex;
+    flex-direction: column;
+    background-color: #E48C31;
+    width: 20.3482vh;
+    height: 21.2187vh;
+    border-width: 1.0881vh 1.0881vh 0vh 1.0881vh;
+    border-style: solid;
+    border-color: #FDF4E8;
+    align-items: center;
+}
+
+/* Nom de l'amelioration*/
+.upgrade_title{
+    position: absolute;
+    margin-top: -3.05vh;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.15vh;
+    -webkit-text-stroke-color: black;
+}
+
+/* Niveau de l'amelioration */
+.upgrade_level{
+    color: black;
+    position: absolute;
+    margin-top: 17vh;
+}
+
+/* Boutton ameliorer */
+.upgrade_button{
+    color: white;
+    font-size: 3.9173vh;
+    width: 22.9597vh;
+    height: 7.617vh;
+    background: #4AA834;
+    border: 1.0881vh solid #000000;
+    margin-top: 21.2187vh;
+}
+
+.downgrade_button{
+    color: white;
+    font-size: 3.9173vh;
+    width: 22.9597vh;
+    height: 7.617vh;
+    border: 1.0881vh solid #000000;
+    background: linear-gradient(to top, #5D6363,#525D61);
+    margin-top: 1vh;
+}
+
 /* Image_garage */
 #image_garage{
     position: absolute;
