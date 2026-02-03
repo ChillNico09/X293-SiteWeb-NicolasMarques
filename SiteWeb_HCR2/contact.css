@@ -5,7 +5,7 @@ body{
 
 /* Header */
 header{
-    width: 208.9227vh;
+    width: 100vw;
     height: 15.7398vh;
     left: 0vh;
     top: 0vh;
@@ -32,7 +32,7 @@ p{
 }
 /* Body */
 body{
-    width: 185.7292vh;
+    width: 88.8985vw;
     height: 100vh;
     background: linear-gradient(to top, #353637, #66656B);
     margin: 0vh;
@@ -42,7 +42,7 @@ body{
 /* hcr2_Logo */
 #HCR2_Logo{
     position: absolute;
-    width: 26.7576vh;
+    width: 12.8074vw;
     height: 14.1658vh;
     left: 2.4134vh;
     top: 1vh;
@@ -58,7 +58,7 @@ body{
 
 /* Boutton Header */
 .Button_Header{
-    width: 20.9864vh;
+    width: 10.0451vw;
     height: 15.7398vh;
     top: 0vh;
     color: white;
@@ -103,14 +103,14 @@ a{
 
 /* Accueil_Image */
 #icon_contact{
-    width: 10.0189vh;
+    width: 4.7955vw;
     height: 10.702vh;
     filter: invert();
 }
 
 /* Calculatrice_Image */
 #icon_calculer{
-    width: 10.9129vh;
+    width: 5.2234vw;
     height: 10.9129vh;
     filter: invert();
 
@@ -126,7 +126,7 @@ a{
 /* flexContainerContact */
 .flexContainerContact{
     display: flex;
-    width: 208.9227vh;
+    width: 100vw;
     height: 84.2602vh;
     flex-direction: column;
     align-items: center;
@@ -139,7 +139,7 @@ a{
     position: relative;
     flex-direction: column;
     align-items: center;
-    width: 193.1447vh;
+    width: 92.4479vw;
     height: 74.4669vh;
     background: linear-gradient(180deg, #2E3643 0%, #262C38 100%);
     border: 1.0881vh solid #8B8B8B;
@@ -162,7 +162,7 @@ a{
 
 /* zone de saisie */
 .textInput{
-    width: 180.5223vh;
+    width: 86.4062vw;
     height: 5.2699vh;
     
     background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);
@@ -172,7 +172,7 @@ a{
 /* Boutton envoyer*/
 .submitInput{
     position: absolute;
-    width: 22.0892vh;
+    width: 10.5729vw;
     height: 14.2546vh;
     bottom: 1.741vh;
     right: 5.4407vh;
@@ -199,7 +199,7 @@ a{
 
 /* Dernière zone de saisie*/
 #lastTextInput{
-    width: 150.5223vh;
+    width: 72.0469vw;
     height: 25.2699vh;
     align-self: baseline;
     background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);

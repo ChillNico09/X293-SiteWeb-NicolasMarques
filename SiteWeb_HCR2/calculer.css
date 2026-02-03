@@ -1,6 +1,6 @@
 /* Header */
 header{
-    width: 208.9227vh;
+    width: 100vw;
     height: 15.7398vh;
     left: 0vh;
     top: 0vh;
@@ -22,7 +22,7 @@ p{
 }
 /* Body */
 body{
-    width: 185.7292vh;
+    width: 88.8985vw;
     height: 100vh;
     margin: 0vh;
     color: white;
@@ -32,7 +32,7 @@ body{
 /* hcr2_Logo */
 #HCR2_Logo{
     position: absolute;
-    width: 26.7576vh;
+    width: 12.8074vw;
     height: 14.1658vh;
     left: 2.4134vh;
     top: 1vh;
@@ -48,7 +48,7 @@ body{
 
 /* Boutton Header */
 .Button_Header{
-    width: 20.9864vh;
+    width: 10.0451vw;
     height: 15.7398vh;
     top: 0vh;
     color: white;
@@ -87,13 +87,13 @@ a{
     border-left: none;
     border-right: rgb(0,0,0);
 
-    border-width: 0.5247vh;
+    border-width: 0.2511vw;
     border-right-style: solid;
 }
 
 /* Formulaire_Image */
 #icon_contact{
-    width: 10.0189vh;
+    width: 4.7955vw;
     height: 10.702vh;
     filter: invert();
 
@@ -102,14 +102,14 @@ a{
 
 /* Accueil_Image */
 #icon_accueil{
-    width: 10.9129vh;
+    width: 5.2234vw;
     height: 10.9129vh;
     filter: invert();
 }
 
 /* Excplication du site */
 #SectionCalculer{
-    width: 208.9227vh;
+    width: 100vw;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -132,7 +132,7 @@ a{
     position: absolute;
     gap: 15.4407vh;
     height: 28.8357vh;
-    width: 208.9227vh;
+    width: 100vw;
     font-size: 3.9173vh
 }
 
@@ -141,7 +141,7 @@ a{
     display: flex;
     flex-direction: column;
     background-color: #E48C31;
-    width: 20.3482vh;
+    width: 9.7396vw;
     height: 21.2187vh;
     border-width: 1.0881vh 1.0881vh 0vh 1.0881vh;
     border-style: solid;
@@ -169,7 +169,7 @@ a{
 .upgrade_button{
     color: white;
     font-size: 3.9173vh;
-    width: 22.9597vh;
+    width: 10.9896vw;
     height: 7.617vh;
     background: linear-gradient(180deg, #4AB235 0%, #54B13C 100%);
     border: 1.0881vh solid #000000;
@@ -180,7 +180,7 @@ a{
 .downgrade_button{
     color: white;
     font-size: 3.9173vh;
-    width: 22.9597vh;
+    width: 10.9896vw;
     height: 7.617vh;
     border: 1.0881vh solid #000000;
     background: linear-gradient(to top, #5D6363,#525D61);
@@ -191,28 +191,28 @@ a{
 /* Image_garage */
 #image_garage{
     position: absolute;
-    width: 208.9227vh;
+    width: 100vw;
     height: 84.2602vh;
 }
 
 /* Image du véhicule*/
 #Vehicule_Icon{
-    width: 55vh;
+    width: 26.3255vw;
     z-index: +1;
     margin-top: 40vh;
 }
 
 /* Illustration de véhicule */
 #change_vehicule_button{
-    width:10vh;
+    width:4.7865vw;
     position: absolute;
-    right: 20vh;
+    right: 9.5729vw;
 }
 
 /* Boutton calculer */
 #calculerRestant{
     position: absolute;
-    width: 22.0892vh;
+    width: 10.5729vw;
     height: 14.2546vh;
     bottom: 1.741vh;
     right: 5.4407vh;
