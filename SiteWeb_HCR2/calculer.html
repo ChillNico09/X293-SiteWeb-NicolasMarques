@@ -8,7 +8,9 @@
 </head>
     <header> 
         <div id="flexContainerHeader">
-            <img src="Hill_Climb_Racing_2_Logo.png" alt="Logo du jeu Hill Climb Racing 2" id="HCR2_Logo">
+            <a href="accueil.html">               
+                <img src="Hill_Climb_Racing_2_Logo.png" alt="Logo du jeu Hill Climb Racing 2" id="HCR2_Logo">
+            </a>
             <!-- Boutton Contact -->
              <a href="contact.html">
                  <button class="Button_Header" id="Button_Contact" >
@@ -34,38 +36,167 @@
             <!-- Upgardes numero 1 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">Moteur</p>
-                <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="+Niveau">
-                <input type="submit" class="downgrade_button" value="-Niveau">
+                <p class="upgrade_level" id="ul_1">1/20</p>
+                <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_1()">
+                <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_1()">
             </div>
             
             <!-- Upgardes numero 2 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">Adhérence</p>
-                <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="+Niveau">
-                <input type="submit" class="downgrade_button" value="-Niveau">
+                <p class="upgrade_level"  id="ul_2">1/20</p>
+                <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_2()">
+                <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_2()">
             </div>
 
             <!-- Upgardes numero 3 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">Suspension</p>
-                <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="+Niveau">
-                <input type="submit" class="downgrade_button" value="-Niveau">
+                <p class="upgrade_level" id="ul_3">1/20</p>
+                <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_3()">
+                <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_3()">
             </div>
 
             <!-- Upgardes numero 4 -->
             <div class="upgrade_block">
                 <p class="upgrade_title">4X4</p>
-                <p class="upgrade_level">1/20</p>
-                <input type="submit" class="upgrade_button" value="+Niveau">
-                <input type="submit" class="downgrade_button" value="-Niveau">
+                <p class="upgrade_level" id="ul_4">1/20</p>
+                <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_4()">
+                <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_4()">
             </div>
             <!-- Image pour changer de véhicule -->
             <img src="assets\Background-AND-Button\ChangeVehicule_PLACEHOLDER.png" alt="Illustration d'une jeep comme bouton pour changer de véhicule" id="change_vehicule_button">
         </section>
-        <input type="submit" id="calculerRestant" value="Calculer">
+        <input type="submit" id="calculerRestant" value="Calculer" onclick="Calculate()">
     </section>
 </body>
 </html>
+<script>
+    let listUpgrade_1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    let listUpgrade_2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    let listUpgrade_3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    let listUpgrade_4 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    let level_1 = 1;
+    let level_2 = 1;
+    let level_3 = 1;
+    let level_4 = 1;
+
+    //Upgrade 1
+    function Upgrade_1(){
+        if(level_1 >= 20){
+
+        }
+        else
+        {
+            level_1++;
+            document.getElementById("ul_1").textContent=level_1+"/20";
+        }
+
+    }
+
+    //Upgrade 2
+    function Upgrade_2(){
+        if(level_2 >= 20){
+
+        }
+        else
+        {
+            level_2++;
+            document.getElementById("ul_2").textContent=level_2+"/20";
+        }
+    }
+
+    //Upgrade 3
+    function Upgrade_3(){
+        if(level_3 >= 20){
+
+        }
+        else
+        {
+            level_3++;
+            document.getElementById("ul_3").textContent=level_3+"/20";
+        }
+    }
+
+    //Upgrade 4
+    function Upgrade_4(){
+        if(level_4 >= 20){
+
+        }
+        else
+        {
+            level_4++;
+            document.getElementById("ul_4").textContent=level_4+"/20";
+        }
+    }
+
+    //Downgrade 1
+    function Downgrade_1(){
+        if(level_1 <= 1){
+
+        }
+        else
+        {
+            level_1--;
+            document.getElementById("ul_1").textContent=level_1+"/20";
+        }
+    }
+
+    //Downgrade 2
+    function Downgrade_2(){
+        if(level_2 <= 1){
+
+        }
+        else
+        {
+            level_2--;
+            document.getElementById("ul_2").textContent=level_2+"/20";
+        }
+    }
+
+    //Downgrade 3
+    function Downgrade_3(){
+        if(level_3 <= 1){
+
+        }
+        else
+        {
+            level_3--;
+            document.getElementById("ul_3").textContent=level_3+"/20";
+        }
+    }
+
+    //Downgrade 4
+    function Downgrade_4(){
+        if(level_4 <= 1){
+
+        }
+        else
+        {
+            level_4--;
+            document.getElementById("ul_4").textContent=level_4+"/20";
+        }
+    }
+
+    function Calculate(){
+        let money_1=0;
+        let money_2=0;
+        let money_3=0;
+        let money_4=0;
+        for(let i = listUpgrade_1[level_1]; i < 21; i++){
+            money_1+=i;
+        }
+        for(let i = listUpgrade_2[level_2]; i < 21; i++){
+            money_2+=i;
+        }
+        for(let i = listUpgrade_3[level_3]; i < 21; i++){
+            money_3+=i;
+        }
+        for(let i = listUpgrade_4[level_4]; i < 21; i++){
+            money_4+=i;
+        }
+        let moneyFinal = money_1+money_2+money_3+money_4;
+        document.getElementById("ul_4").textContent=moneyFinal;
+    }
+
+</script>
