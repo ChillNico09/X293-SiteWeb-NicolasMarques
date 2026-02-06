@@ -49,7 +49,32 @@
             
             <!-- Boutton envoyer -->
             <input type="submit" class="submitInput">
+
+            <button class="infoNico" onclick="openForm()">Info sur moi</button>
+        </div>
+        <div class="form-popup" id="myForm">
+            <h2 style="font-size: 4vh;">Qui a fait ce siteweb?</h2>
+
+            <p style="font-size: 2.2vh;">
+                Je suis le développeur de ce site. Je m'appelle Nicolas Marques puis je suis né le 26 février 2009. 
+                <br>
+                <br>
+                Je suis un apprenti de première année à l'ETML dans la section informatique. Puis je vais me spécialiser dans le développement d'application si possible.
+            </p>
+
+            <button class="closeInfoNico" onclick="closeForm()">X</button>
         </div>
     </section>
 </body>
 </html>
+
+<script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "flex";
+    document.getElementById("myForm").style.position = "absolute";
+    }
+
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+</script>

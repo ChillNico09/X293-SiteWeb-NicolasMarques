@@ -205,3 +205,49 @@ a{
     background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);
     border: 0.5441vh solid #000000;
 }
+
+/* Boutton d'information (qui ouvre la pop-up d'information sur le développeur originale de ce siteweb) */
+.infoNico{
+    position: absolute;
+    width: 10.5729vw;
+    height: 10.2546vh;
+    bottom: 18.741vh;
+    right: 5.4407vh;
+
+    background: linear-gradient(180deg, #7D8B8C 0%, #565D63 100%);
+    border: 1.0881vh solid #000000;
+
+    font-size: 3.5vh;
+    color: white;
+    cursor:pointer
+}
+
+/* Pop-up d'information */
+#myForm{
+    display: none;
+}
+
+/* Style de la pop-up */
+.form-popup{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    background: linear-gradient(180deg, #2E3643 0%, #262C38 100%);
+    border: 1.0881vh solid #8B8B8B;
+}
+
+/* Boutton pour fermer la pop-up */
+.closeInfoNico{
+    position: absolute;
+    right: 1.5vw;
+    top: 1.5vh;
+
+    width: 3vw;
+    height: 5vh;
+
+    background: linear-gradient(180deg, #ff0000 0%, #690000 100%);
+    border: 0.5vh solid #000000;
+}
