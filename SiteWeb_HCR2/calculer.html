@@ -35,7 +35,7 @@
         <section id="upgrades_panel">
             <!-- Upgardes numero 1 -->
             <div class="upgrade_block">
-                <p class="upgrade_title">Moteur</p>
+                <p class="upgrade_title" id="ut_1">Moteur</p>
                 <p class="upgrade_level" id="ul_1">1/20</p>
                 <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_1()">
                 <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_1()">
@@ -43,7 +43,7 @@
             
             <!-- Upgardes numero 2 -->
             <div class="upgrade_block">
-                <p class="upgrade_title">Adhérence</p>
+                <p class="upgrade_title" id="ut_2">Adhérence</p>
                 <p class="upgrade_level"  id="ul_2">1/20</p>
                 <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_2()">
                 <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_2()">
@@ -51,7 +51,7 @@
 
             <!-- Upgardes numero 3 -->
             <div class="upgrade_block">
-                <p class="upgrade_title">Suspension</p>
+                <p class="upgrade_title" id="ut_3">Suspension</p>
                 <p class="upgrade_level" id="ul_3">1/20</p>
                 <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_3()">
                 <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_3()">
@@ -59,7 +59,7 @@
 
             <!-- Upgardes numero 4 -->
             <div class="upgrade_block">
-                <p class="upgrade_title">4X4</p>
+                <p class="upgrade_title" id="ut_4">4X4</p>
                 <p class="upgrade_level" id="ul_4">1/20</p>
                 <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_4()">
                 <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_4()">
@@ -81,11 +81,35 @@
 </body>
 </html>
 <script>
-    //Prix Upgrade Hill CLimber
+    let vehicule_id = 1;
+
     let listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
     let listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
     let listUpgrade_3 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
     let listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+
+    if(vehicule_id == 1){
+        listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        listUpgrade_3 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        document.getElementById("ut_1").textContent="Moteur";
+        document.getElementById("ut_2").textContent="Adhérence";
+        document.getElementById("ut_3").textContent="Suspension";
+        document.getElementById("ut_4").textContent="4X4";
+    }
+    if (vehicule_id == 2) {
+        listUpgrade_1 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+        listUpgrade_2 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+        listUpgrade_3 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+        listUpgrade_4 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+        document.getElementById("ut_1").textContent="Moteur";
+        document.getElementById("ut_2").textContent="Adhérence";
+        document.getElementById("ut_3").textContent="Suspension";
+        document.getElementById("ut_4").textContent="M.A.A";
+    }
+    //Prix Upgrade Hill CLimber
+
 
     let level_1 = 1;
     let level_2 = 1;
