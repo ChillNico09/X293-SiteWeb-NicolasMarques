@@ -66,16 +66,27 @@
             </div>
             <!-- Image pour changer de véhicule -->
             <img src="assets\Background-AND-Button\ChangeVehicule_PLACEHOLDER.png" alt="Illustration d'une jeep comme bouton pour changer de véhicule" id="change_vehicule_button">
+
         </section>
+        <!-- Boutton pour calculer l'argent restant -->
         <input type="submit" id="calculerRestant" value="Calculer" onclick="Calculate()">
+
+        <!-- Afficher le nombre d'argent requis -->
+        <div id="nombreArgentRequis">
+            <p id="textNombreArgentRequis">
+                Argent requis
+            </p>
+        </div>
     </section>
 </body>
 </html>
 <script>
-    let listUpgrade_1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-    let listUpgrade_2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-    let listUpgrade_3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-    let listUpgrade_4 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    //Prix Upgrade Hill CLimber
+    let listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+    let listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+    let listUpgrade_3 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+    let listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+
     let level_1 = 1;
     let level_2 = 1;
     let level_3 = 1;
@@ -183,20 +194,20 @@
         let money_2=0;
         let money_3=0;
         let money_4=0;
-        for(let i = listUpgrade_1[level_1]; i < 21; i++){
-            money_1+=i;
+        for(let i = level_1; i < listUpgrade_1[i]; i++){
+            money_1+=listUpgrade_1[i];
         }
-        for(let i = listUpgrade_2[level_2]; i < 21; i++){
-            money_2+=i;
+        for(let i = level_2; i < listUpgrade_2[i]; i++){
+            money_2+=listUpgrade_1[i];
         }
-        for(let i = listUpgrade_3[level_3]; i < 21; i++){
-            money_3+=i;
+        for(let i = level_3; i < listUpgrade_3[i]; i++){
+            money_3+=listUpgrade_1[i];
         }
-        for(let i = listUpgrade_4[level_4]; i < 21; i++){
-            money_4+=i;
+        for(let i = level_4; i < listUpgrade_4[i]; i++){
+            money_4+=listUpgrade_1[i];
         }
         let moneyFinal = money_1+money_2+money_3+money_4;
-        document.getElementById("ul_4").textContent=moneyFinal;
+        document.getElementById("textNombreArgentRequis").textContent=moneyFinal;
     }
 
 </script>

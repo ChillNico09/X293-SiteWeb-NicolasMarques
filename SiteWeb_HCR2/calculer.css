@@ -225,6 +225,25 @@ a{
     cursor:pointer
 }
 
+
+#nombreArgentRequis{
+    position: absolute;
+    width: 10.5729vw;
+    height: 14.2546vh;
+    bottom: 1.741vh;
+    left: 5.4407vh;
+
+    justify-content: center;
+    align-content: center;
+
+    background: linear-gradient(180deg,  #754C25 0%, #774019 100%);
+    border: 1.0881vh solid #000000;
+
+    font-size: 5vh;
+    color: white;
+    cursor:pointer
+}
+
 /* Boutton calculer(HOVER)*/
 #calculerRestant:hover{
     background: linear-gradient(180deg, #4AA738 0%, #75BD4E 100%);
