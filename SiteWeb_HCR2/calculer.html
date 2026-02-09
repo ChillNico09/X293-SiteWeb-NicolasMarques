@@ -97,14 +97,41 @@
 </body>
 </html>
 <script>    
-    let vehicule_id = 1;
+
+let vehicule_id = 0;
 
     function ChangeVehicule(id){
-        if(id == 'vehicule_4'){
-            vehicule_id = 4;
+        if(id == 'vehicule_1')
+        {
+            vehicule_id = 1;
+        }
+        if(id == 'vehicule_4')
+        {
+            vehicule_id = 2;
+        }
+          if(vehicule_id == 1){
+        listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        listUpgrade_3 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
+        document.getElementById("ut_1").textContent="Moteur";
+        document.getElementById("ut_2").textContent="Adhérence";
+        document.getElementById("ut_3").textContent="Suspension";
+        document.getElementById("ut_4").textContent="4X4";
+            }
+        if (vehicule_id == 2) {
+                listUpgrade_1 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+                listUpgrade_2 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+                listUpgrade_3 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+                listUpgrade_4 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+                document.getElementById("ut_1").textContent="Moteur";
+                document.getElementById("ut_2").textContent="Adhérence";
+                document.getElementById("ut_3").textContent="Suspension";
+                document.getElementById("ut_4").textContent="M.A.A";
         }
     }
 
+    
     let listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
     let listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
     let listUpgrade_3 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
@@ -130,6 +157,7 @@
         document.getElementById("ut_3").textContent="Suspension";
         document.getElementById("ut_4").textContent="M.A.A";
     }
+
     //Prix Upgrade Hill CLimber
 
 
