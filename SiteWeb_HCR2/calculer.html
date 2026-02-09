@@ -64,9 +64,25 @@
                 <input type="button" class="upgrade_button" value="+Niveau" onclick="Upgrade_4()">
                 <input type="button" class="downgrade_button" value="-Niveau" onclick="Downgrade_4()">
             </div>
-            <!-- Image pour changer de véhicule -->
-            <img src="assets\Background-AND-Button\ChangeVehicule_PLACEHOLDER.png" alt="Illustration d'une jeep comme bouton pour changer de véhicule" id="change_vehicule_button">
 
+            <!-- Image pour changer de véhicule -->
+            <img src="assets\Background-AND-Button\ChangeVehicule_PLACEHOLDER.png" alt="Illustration d'une jeep comme bouton pour changer de véhicule" id="change_vehicule_button" onclick="openForm()">
+
+
+            <!-- Pop-up pour changer de vehicule -->
+        <div class="form-popup" id="myForm">
+            <div class="titleChangeVehicule">
+                <h2 style="font-size: 4vh;">Changer de véhicule</h2>
+            </div>
+            <img src="assets\Vehicule_Icon\HillClimber.webp" alt="Jeep rouge: Hill climber" class="vehiculeIcon_Change" id="vehicule_1" onclick="ChangeVehicule('vehicule_1')">
+            <img src="assets\Vehicule_Icon\HillClimberMK2.webp" alt="Jeep rouge avec une cage de sécurité: Hill climber mark 2" class="vehiculeIcon_Change" id="vehicule_2" onclick="ChangeVehicule('vehicule_2')">
+            <img src="assets\Vehicule_Icon\Sportscar.webp" alt="voiture de sport rouge: voiture de sport " class="vehiculeIcon_Change" id="vehicule_3" onclick="ChangeVehicule('vehicule_3')">
+            <img src="assets\Vehicule_Icon\Offroader.webp" alt="voiture tout-terrain avec des chenilles et une cage de sécurité: Tout-terrain" class="vehiculeIcon_Change" id="vehicule_4" onclick="ChangeVehicule('vehicule_4')">
+            <button class="closeInfoNico" onclick="closeForm()">X</button>
+        </div>
+
+
+            
         </section>
         <!-- Boutton pour calculer l'argent restant -->
         <input type="submit" id="calculerRestant" value="Calculer" onclick="Calculate()">
@@ -80,8 +96,14 @@
     </section>
 </body>
 </html>
-<script>
+<script>    
     let vehicule_id = 1;
+
+    function ChangeVehicule(id){
+        if(id == 'vehicule_4'){
+            vehicule_id = 4;
+        }
+    }
 
     let listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
     let listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
@@ -116,6 +138,16 @@
     let level_3 = 1;
     let level_4 = 1;
 
+
+
+    function openForm() {
+    document.getElementById("myForm").style.display = "flex";
+    document.getElementById("myForm").style.position = "absolute";
+    }
+
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
     //Upgrade 1
     function Upgrade_1(){
         if(level_1 >= 20){

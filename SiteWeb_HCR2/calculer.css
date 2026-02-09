@@ -225,7 +225,7 @@ a{
     cursor:pointer
 }
 
-
+/* Affichage du nombre d'argent requis */
 #nombreArgentRequis{
     position: absolute;
     width: 10.5729vw;
@@ -254,4 +254,46 @@ a{
 #calculerRestant:active{
     background: linear-gradient(180deg, #75bd4e 0%, #4aa738 100%);
     border: 1.0881vh solid #000000;
+}
+
+/* Pop-up d'information */
+#myForm{
+    display: none;
+}
+
+/* Boutton pour fermer la pop-up */
+.closeInfoNico{
+    position: absolute;
+    right: 1.5vw;
+    top: 1.5vh;
+
+    width: 3vw;
+    height: 5vh;
+
+    background: linear-gradient(180deg, #ff0000 0%, #690000 100%);
+    border: 0.5vh solid #000000;
+}
+
+/* Style de la pop-up */
+.form-popup{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+
+    width: 50vw;
+    height: 50vh;
+
+    background: linear-gradient(180deg, #2E3643 0%, #262C38 100%);
+    border: 1.0881vh solid #8B8B8B;
+}
+
+/* Centrer le titre de la pop-up */
+.titleChangeVehicule{
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
 }
