@@ -75,10 +75,18 @@
             <div class="titleChangeVehicule">
                 <h2 style="font-size: 4vh;">Changer de véhicule</h2>
             </div>
+            
             <img src="assets\Vehicule_Icon\HillClimber.webp" alt="Jeep rouge: Hill climber" class="vehiculeIcon_Change" id="vehicule_1" onclick="ChangeVehicule('vehicule_1')">
             <img src="assets\Vehicule_Icon\HillClimberMK2.webp" alt="Jeep rouge avec une cage de sécurité: Hill climber mark 2" class="vehiculeIcon_Change" id="vehicule_2" onclick="ChangeVehicule('vehicule_2')">
-            <img src="assets\Vehicule_Icon\Sportscar.webp" alt="voiture de sport rouge: voiture de sport " class="vehiculeIcon_Change" id="vehicule_3" onclick="ChangeVehicule('vehicule_3')">
-            <img src="assets\Vehicule_Icon\Offroader.webp" alt="voiture tout-terrain avec des chenilles et une cage de sécurité: Tout-terrain" class="vehiculeIcon_Change" id="vehicule_4" onclick="ChangeVehicule('vehicule_4')">
+            <img src="assets\Vehicule_Icon\Sportscar.webp" alt="voiture de sport rouge: voiture de sport" class="vehiculeIcon_Change" id="vehicule_3" onclick="ChangeVehicule('vehicule_3')">
+            <img src="assets\Vehicule_Icon\Buggy.webp" alt="buggy des dunes" class="vehiculeIcon_Change" id="vehicule_4" onclick="ChangeVehicule('vehicule_4')">
+            <img src="assets\Vehicule_Icon\Super_Diesel.webp" alt="4x4 bleu Super diesel" class="vehiculeIcon_Change" id="vehicule_5" onclick="ChangeVehicule('vehicule_5')">
+            <img src="assets\Vehicule_Icon\Super_Bike.webp" alt="Moto de course rouge" class="vehiculeIcon_Change" id="vehicule_6" onclick="ChangeVehicule('vehicule_6')">
+            <img src="assets\Vehicule_Icon\Supercar.webp" alt="Voiture de luxe sportive bleu" class="vehiculeIcon_Change" id="vehicule_7" onclick="ChangeVehicule('vehicule_7')">
+            <img src="assets\Vehicule_Icon\RallyCar.webp" alt="Voiture de rally bleu pale" class="vehiculeIcon_Change" id="vehicule_8" onclick="ChangeVehicule('vehicule_8')">
+            <img src="assets\Vehicule_Icon\Lowrider.webp" alt="Voiture lowrider verte pale" class="vehiculeIcon_Change" id="vehicule_9" onclick="ChangeVehicule('vehicule_9')">
+            <img src="assets\Vehicule_Icon\Beast.webp" alt="Voiture abîmer bleu" class="vehiculeIcon_Change" id="vehicule_10" onclick="ChangeVehicule('vehicule_10')">
+            <img src="assets\Vehicule_Icon\Offroader.webp" alt="voiture tout-terrain avec des chenilles et une cage de sécurité: Tout-terrain" class="vehiculeIcon_Change" id="vehicule_27" onclick="ChangeVehicule('vehicule_27')">
             <button class="closeInfoNico" onclick="closeForm()">X</button>
         </div>
 
@@ -100,7 +108,7 @@
 <script>    
 
 let vehicule_id = 0;
-const imageVehicule = document.getElementById('Vehicule_Icon');
+const imageVehicule = document.getElementById("Vehicule_Icon");
 
 let listUpgrade_1 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
 let listUpgrade_2 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 8600, 10000, 11000, 13000, 15000, 17000, 20000, 23000, 26000, 30000];
@@ -110,14 +118,8 @@ let listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 860
     VehiculeStat.call()
 
     function ChangeVehicule(id){
-        if(id == 'vehicule_1')
-        {
-            vehicule_id = 1;
-        }
-        if(id == 'vehicule_4')
-        {
-            vehicule_id = 2;
-        }
+        let id_trimed = id.replace("vehicule_",'');
+        vehicule_id = parseInt(id_trimed)
         VehiculeStat.call();
     }
 
@@ -131,9 +133,108 @@ let listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 860
             document.getElementById("ut_2").textContent="Adhérence";
             document.getElementById("ut_3").textContent="Suspension";
             document.getElementById("ut_4").textContent="4X4";
-            imageVehicule.src= "assets\Vehicule_Icon\HillClimber.webp";
+            imageVehicule.src= 'assets/Vehicule_Icon/HillClimber.webp';
         }
         if (vehicule_id == 2) {
+            listUpgrade_1 = [0, 1200, 1900, 2700, 3600, 4500, 5500, 6600, 7800, 9200, 11000, 12000, 14000, 17000, 19000, 22000, 26000, 30000, 35000, 41000];
+            listUpgrade_2 = [0, 1200, 1900, 2700, 3600, 4500, 5500, 6600, 7800, 9200, 11000, 12000, 14000, 17000, 19000, 22000, 26000, 30000, 35000, 41000];
+            listUpgrade_3 = [0, 1200, 1900, 2700, 3600, 4500, 5500, 6600, 7800, 9200, 11000, 12000, 14000, 17000, 19000, 22000, 26000, 30000, 35000, 41000];
+            listUpgrade_4 = [0, 1200, 1900, 2700, 3600, 4500, 5500, 6600, 7800, 9200, 11000, 12000, 14000, 17000, 19000, 22000, 26000, 30000, 35000, 41000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Suspension";
+            document.getElementById("ut_4").textContent="Arceau";
+            imageVehicule.src= "assets/Vehicule_Icon/HillClimberMK2.webp";
+        }
+        if(vehicule_id == 3){
+            listUpgrade_1 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            listUpgrade_2 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            listUpgrade_3 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            listUpgrade_4 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Turbo";
+            document.getElementById("ut_4").textContent="Déportance";
+            imageVehicule.src= 'assets/Vehicule_Icon/Sportscar.webp';
+        }
+        if(vehicule_id == 4){
+            listUpgrade_1 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            listUpgrade_2 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            listUpgrade_3 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            listUpgrade_4 = [0, 1600, 2400, 3300, 4300, 5300, 6500, 7800, 9200, 11000, 13000, 15000, 17000, 20000, 24000, 28000, 32000, 38000, 44000, 52000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Suspension";
+            document.getElementById("ut_4").textContent="Arceau";
+            imageVehicule.src= 'assets/Vehicule_Icon/Buggy.webp';
+        }
+        if(vehicule_id == 5){
+            listUpgrade_1 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            listUpgrade_2 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            listUpgrade_3 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            listUpgrade_4 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Turbo";
+            document.getElementById("ut_3").textContent="Adhérence";
+            document.getElementById("ut_4").textContent="Suspension";
+            imageVehicule.src= 'assets/Vehicule_Icon/Super_Diesel.webp';
+        }
+        if(vehicule_id == 6){
+            listUpgrade_1 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            listUpgrade_2 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            listUpgrade_3 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            listUpgrade_4 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Suspension ";
+            document.getElementById("ut_4").textContent="Déportance ";
+            imageVehicule.src= 'assets/Vehicule_Icon/Super_Bike.webp';
+        }
+        if (vehicule_id == 7) {
+            listUpgrade_1 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            listUpgrade_2 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            listUpgrade_3 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            listUpgrade_4 = [0, 2000, 3100, 4400, 5900, 7700, 9900, 13000, 16000, 20000, 26000, 33000, 41000, 53000, 67000, 86000, 110000, 140000, 180000, 230000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Frein Aérien";
+            document.getElementById("ut_4").textContent="Échappement";
+            imageVehicule.src= "assets/Vehicule_Icon/Supercar.webp";
+        }
+        if(vehicule_id == 8){
+            listUpgrade_1 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            listUpgrade_2 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            listUpgrade_3 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            listUpgrade_4 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Turbo";
+            document.getElementById("ut_4").textContent="Boîtes de vitesse";
+            imageVehicule.src= 'assets/Vehicule_Icon/RallyCar.webp';
+        }
+        if(vehicule_id == 9){
+            listUpgrade_1 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            listUpgrade_2 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            listUpgrade_3 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
+            listUpgrade_4 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Suspension";
+            document.getElementById("ut_4").textContent="Arceau";
+            imageVehicule.src= 'assets/Vehicule_Icon/Lowrider.webp';
+        }
+        if(vehicule_id == 10){
+            listUpgrade_1 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            listUpgrade_2 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            listUpgrade_3 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            listUpgrade_4 = [0, 2000, 3000, 4200, 5600, 7200, 9100, 11000, 14000, 18000, 22000, 27000, 33000, 41000, 51000, 64000, 80000, 100000, 120000, 160000];
+            document.getElementById("ut_1").textContent="Moteur";
+            document.getElementById("ut_2").textContent="Adhérence";
+            document.getElementById("ut_3").textContent="Durabilité";
+            document.getElementById("ut_4").textContent="Boost";
+            imageVehicule.src= 'assets/Vehicule_Icon/Beast.webp';
+        }
+        if (vehicule_id == 27) {
             listUpgrade_1 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
             listUpgrade_2 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
             listUpgrade_3 = [0, 2000, 3000, 4100, 5400, 6900, 8600, 11000, 13000, 16000, 19000, 24000, 29000, 35000, 43000, 52000, 64000, 79000, 97000, 120000];
@@ -142,7 +243,7 @@ let listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 860
             document.getElementById("ut_2").textContent="Adhérence";
             document.getElementById("ut_3").textContent="Suspension";
             document.getElementById("ut_4").textContent="M.A.A";
-            imageVehicule.src= "assets\Vehicule_Icon\Offroader.webp";
+            imageVehicule.src= "assets/Vehicule_Icon/Offroader.webp";
         }
     }
 
@@ -270,13 +371,13 @@ let listUpgrade_4 = [0, 800, 1500, 2200, 2900, 3700, 4500, 5400, 6400, 7400, 860
             money_1+=listUpgrade_1[i];
         }
         for(let i = level_2; i < listUpgrade_2[i]; i++){
-            money_2+=listUpgrade_1[i];
+            money_2+=listUpgrade_2[i];
         }
         for(let i = level_3; i < listUpgrade_3[i]; i++){
-            money_3+=listUpgrade_1[i];
+            money_3+=listUpgrade_3[i];
         }
         for(let i = level_4; i < listUpgrade_4[i]; i++){
-            money_4+=listUpgrade_1[i];
+            money_4+=listUpgrade_4[i];
         }
         let moneyFinal = money_1+money_2+money_3+money_4;
         document.getElementById("textNombreArgentRequis").textContent=moneyFinal;
