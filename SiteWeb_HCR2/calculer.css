@@ -289,6 +289,8 @@ a{
     width: 75vw;
     height: 75vh;
 
+    gap: 1vh;
+
     background: linear-gradient(180deg, #2E3643 0%, #262C38 100%);
     border: 1.0881vh solid #8B8B8B;
 }
@@ -301,7 +303,12 @@ a{
     justify-content: center;
 }
 
+/* Icône des véhicules dans la pop-up "changer de véhicule" */
 .vehiculeIcon_Change{
+    border: #000000;
+    border-width: 0.5vw;
+    border-style: solid;
+    background-color: #71787E;
     width: 10vw;
-
+    cursor: pointer;
 }
