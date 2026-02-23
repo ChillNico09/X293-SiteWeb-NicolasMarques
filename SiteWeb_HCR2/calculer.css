@@ -207,6 +207,7 @@ a{
     width:4.7865vw;
     position: absolute;
     right: 9.5729vw;
+    cursor: pointer;
 }
 
 /* Boutton calculer */
@@ -262,7 +263,7 @@ a{
 }
 
 /* Boutton pour fermer la pop-up */
-.closeInfoNico{
+.closeVehiculeSelection{
     position: absolute;
     right: 1.5vw;
     top: 1.5vh;
@@ -272,6 +273,8 @@ a{
 
     background: linear-gradient(180deg, #ff0000 0%, #690000 100%);
     border: 0.5vh solid #000000;
+
+    cursor: pointer;
 }
 
 /* Style de la pop-up */

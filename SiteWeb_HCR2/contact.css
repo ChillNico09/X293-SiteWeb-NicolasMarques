@@ -250,4 +250,5 @@ a{
 
     background: linear-gradient(180deg, #ff0000 0%, #690000 100%);
     border: 0.5vh solid #000000;
+    cursor: pointer;
 }
