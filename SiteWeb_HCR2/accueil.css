@@ -14,8 +14,8 @@ h1{
     font-size: 5.0367vh;
 }
 
-/* Paragraphe */
-p{
+/* La description de l'utilité du site web */
+#Description{
     text-align: center;
     margin: 1vh;
     font-size: 3.7775vh;
@@ -47,7 +47,7 @@ body{
     justify-content: center;
 }
 
-/* Boutton Header */
+/* Bouton Header */
 .Button_Header{
     width: 10.0451vw;
     height: 15.7398vh;
@@ -68,7 +68,7 @@ a{
     text-decoration: none;
 }
 
-/* Boutton Contact */
+/* Bouton Contact */
 #Button_Contact{
     border-top: none;
     border-bottom: none;
@@ -81,7 +81,7 @@ a{
     align-content: start;
 }
 
-/* Boutton Calculer */
+/* Bouton Calculer */
 #Button_Calculer{
     border-top: none;
     border-bottom: none;
@@ -118,8 +118,14 @@ a{
     align-items: center;
 }
 
-/* Boutton Header (HOVER) */
+/* Bouton Header (HOVER) */
 .Button_Header:hover{
     cursor: pointer;
     background-image: linear-gradient(to top, #ABACB0, #58595B);
+}
+
+/* Liste des règles */
+#OpQuast{
+    font-size: 2vh;
+    text-align: center;
 }
