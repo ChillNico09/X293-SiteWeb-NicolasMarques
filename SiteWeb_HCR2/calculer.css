@@ -279,7 +279,7 @@ a{
 
 /* Style de la pop-up */
 .form-popup{
-    top: 0vh;
+    top: -10vh;
     z-index: +1;
     display: flex;
     flex-wrap: wrap;
@@ -289,8 +289,8 @@ a{
     position: relative;
     flex-direction: row;
 
-    width: 75vw;
-    height: 75vh;
+    width: 85vw;
+    height: 85vh;
 
     gap: 1vh;
 
@@ -312,6 +312,7 @@ a{
     border-width: 0.5vw;
     border-style: solid;
     background-color: #71787E;
-    width: 10vw;
+    width: 9.5vw;
+    min-height: 12.4vh;
     cursor: pointer;
 }
